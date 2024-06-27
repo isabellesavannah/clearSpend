@@ -1,0 +1,55 @@
+.video-card {
+    width: 100%;
+    max-width: 1300px;
+    height: 600px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    overflow: hidden; 
+    border-radius: var(--font-line-height-md, 28px);
+    position: relative;
+    display: block;
+    background: url('https://intimetecvisionsoft.sharepoint.com/:v:/s/Marketing_US/EZRrlp0d7XtNo7fa26BJ9yoBYGZtH5psTUXNIJRojdoc1g?e=qtHi9S') lightgray 50% / cover no-repeat;
+  }
+  .government-transparency-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 300px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 24px;
+    border: 0.5px solid #00324E;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(111deg, rgba(0, 50, 78, 0.54) 34.58%, rgba(0, 83, 129, 0.43) 66.64%, rgba(0, 115, 180, 0.38) 98.7%);
+  }
+  .clear-spend-logo{
+    width: 152px;
+    height: 152px;
+    flex-shrink: 0;
+  }
+.contact-us-card-button{
+    display: flex;
+    width: 180px;
+    height: 50px;
+    padding: 25px 61px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: var(--Blue-semiTransparent, #FFFFF9);
+    border: 1px solid var(--Blue-semiTransparent, #FFFFF9);
+}
+.contact-us-button{
+
+  align-items: right;
+
+}
+.blue-background{
+    background: var(--Text-Standard-Disabled, #50514F);
+    width: 5683px;
+    height: 5033px;
+}

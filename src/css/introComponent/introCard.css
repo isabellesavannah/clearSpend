@@ -1,21 +1,23 @@
 .video-card {
     width: 100%;
-    max-width: 1300px;
-    height: 600px;
+    max-width: 1020px;
+    height: 575px;
     flex-shrink: 0;
     margin: 0 auto;
     overflow: hidden; 
     border-radius: var(--font-line-height-md, 28px);
     position: relative;
     display: block;
-    background: url('https://intimetecvisionsoft.sharepoint.com/:v:/s/Marketing_US/EZRrlp0d7XtNo7fa26BJ9yoBYGZtH5psTUXNIJRojdoc1g?e=qtHi9S') lightgray 50% / cover no-repeat;
+    pointer-events: none;
+    background: url('https://youtu.be/Fjo8-ihGJiY?si=awDkfd9wbKfGKUDL') lightgray 50% / cover no-repeat;
   }
   .government-transparency-card{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 800px;
+    max-width: 800px;
     height: 300px;
     display: flex;
 
@@ -45,8 +47,15 @@
 }
 .contact-us-button{
 
-  align-items: right;
+  justify-content: flex-end;
 
+}
+.header{
+  font-family: Montserrat;
+  font-size: var(--font-size-5xl, 32px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-size-7xl, 40px); /* 125% */
 }
 .blue-background{
     background: var(--Text-Standard-Disabled, #50514F);

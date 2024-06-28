@@ -7,9 +7,7 @@
     height: 575px;
     flex-shrink: 0;
     margin: 0 auto;
-    overflow: hidden; 
     border-radius: var(--font-line-height-md, 28px);
-    position: relative;
     display: block;
     pointer-events: none;
     
@@ -21,48 +19,30 @@
     transform: translate(-50%, -50%);
     width: 800px;
     max-width: 800px;
-    height: 300px;
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
+    height: 400px;
+    display: block;
     border-radius: 24px;
     border: 0.5px solid #00324E;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(111deg, rgba(0, 50, 78, 0.54) 34.58%, rgba(0, 83, 129, 0.43) 66.64%, rgba(0, 115, 180, 0.38) 98.7%);
+
+  }
+  .government-transparency-card-content{
+    text-align: center;
+    padding: 57px 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
   }
 .clear-spend-logo{
     width: 152px;
     height: 152px;
     flex-shrink: 0;
   }
-.contact-us-card-button{
-    display: flex;
-    width: 180px;
-    height: 50px;
-    padding: 25px 61px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 16px;
-    background: var(--Blue-semiTransparent, #FFFFF9);
-    border: 1px solid var(--Blue-semiTransparent, #FFFFF9);
-}
-.contact-us-button-column{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #f9f9f9;
-  margin: 0 auto;
-}
-
-.contact-us-button{
-  padding: 10px 20px;
-  background-color: #04324E;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: auto;
+#card-title{
+  align-self: stretch;
+  font-size: var(--font-size-5xl, 32px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-size-7xl, 40px); /* 125% */
 }

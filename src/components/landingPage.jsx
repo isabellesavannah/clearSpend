@@ -1,15 +1,16 @@
 import React from 'react';
 import '../css/introComponent/introCard.css';
-import '../css/landingPageComponent.css';
 import VideoCardComponent from './videoCardComponent';
-//import GovTransparencyComponent from './govTransparencyComponent';  
+import GifCardComponent from './gifCardComponent';
+
 const LandingPage = () => {
   return (
     <div className="landing-page">
       <main>
         <VideoCardComponent />
+        <GifCardComponent />
       </main>
-    </div>
+    </div>    
     
   );
 };

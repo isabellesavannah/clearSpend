@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/introComponent/introCard.css';
+import '../css/landingPageComponent.css';
 import VideoCardComponent from './videoCardComponent';
 //import GovTransparencyComponent from './govTransparencyComponent';  
 const LandingPage = () => {

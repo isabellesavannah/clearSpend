@@ -3,18 +3,20 @@
   position: relative;
   flex-shrink: 0;
   justify-content: center;
+  width: 100%;
 } 
 .intro-card{
   position: relative;
   background-color: transparent;
   height: 600px;
+  width: 1300px;
   bottom: -50px;
   padding-left: 50%;
 }
 .video-card {
-    width: 100%;
-    max-width: 1020px;
-    height: 575px;
+    width: 120%;
+    max-width: 1300px;
+    height: 100%;
     flex-shrink: 0;
     margin: 0 auto;
     border-radius: var(--font-line-height-md, 28px);
@@ -43,23 +45,33 @@
   }
 
 .clear-spend-logo-card{
-    height: 152px;
-    width: 152px;
-    flex-shrink: 0;
-    background-color: white;
     background-color: transparent;
-    position: absolute;
-    margin-left: 180px;
+    margin-left:255px;
+    justify-content: flex-end;
   }
   .contact-us-button{
+    margin-left: auto;
+    position: relative;
   }
+  .watch-now-link{
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-decoration-line: underline;
+  }
+  .watch-now-link:hover {
+    color: white; /* Change this to your desired hover color */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
   #clear-spend-logo{
     width: 170px;
     height: 100px;
-    margin-left:55px;
     z-index: 100;
     position: absolute;
-    border-radius: 0px 0px var(--itt-spacing-sm, 8px) var(--itt-spacing-sm, 8px);
+    margin-top: 20px;
+    border-radius: var(--font-line-height-md, 10px);
   }
 #card-title{
   color: var(--Blue-semiTransparent, #FFFFF9);
@@ -82,11 +94,5 @@
   margin-bottom: 89px;
   margin-top: 119px;
 }
-#watch-now-link{
-  position: relative;
-  font-size: 1.5rem;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
+
 

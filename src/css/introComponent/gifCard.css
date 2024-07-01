@@ -1,8 +1,9 @@
 .gif-card-component {
     background-image: url("../../images/gifs/blueBackground2.png");
     position: relative;
-    width: var(--HeaderWidth, 1440px);
+    width: 100%;
     height: 1469px;
+    justify-content: center;
   } 
 .hover-options:hover{
     display: flex;
@@ -11,6 +12,3 @@
     align-self: stretch;
 }
 
-.gif-card-component{
-
-}

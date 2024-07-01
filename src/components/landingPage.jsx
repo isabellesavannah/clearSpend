@@ -10,14 +10,19 @@ import GifCardComponent from './gifCardComponent';
 const LandingPage = () => {
   return (
     <div>
+      <header>
+      </header>
       <main className='main-container'>
+        <nav className='nav-component'>
+          
+        </nav>
         <div className='intro-component'>
             <VideoCardComponent />
         </div>
-        <div className='challenge-card-component'>
+        <div className='challenge-card-component universal-componenet'>
             <TheChallengeComponent />
         </div>
-        <div className='gif-card-component'>
+        <div className='gif-card-component universal-componenet'>
             <GifCardComponent />
         </div>
       </main>

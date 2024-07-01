@@ -1,62 +1,86 @@
 .challenge-card-component{
-    width: var(--HeaderWidth, 1440px);
-    height: 832px;
+  
+    max-width: 100%;
+    height: 622px;
     flex-shrink: 0;
 }
      .challenge-component{
         margin-top: 60px;
-        padding-left: 60px;
-        padding-right: 30%;
         padding-top: 20px;
     }
-    .challenge-card{
-        float: left;
-    }
+
     .info-card-icons{
         width: 48px;
         height: 48px;
         flex-shrink: 0;
     }
     .info-card{
-        padding: 43px var(--font-line-height-md, 28px);
-        width: 75%;
-        flex-direction: column;
-        gap: 10px;
-        outline: 2px solid var(--Blue-500, #04324E);
-        border-radius: var(--font-size-md, 16px);
-        border-top: 3px solid var(--Blue-500, #04324E);
-        border-right: 3px solid var(--Blue-500, #04324E);
-        border-bottom: 4px solid var(--Blue-500, #04324E);
-        border-left: 3px solid var(--Blue-500, #04324E);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1px;
+      padding: 33px var(--font-line-height-md, 3px);
+
+
+     
+      border-radius: var(--font-size-md, 16px);
+      border-top: 3px solid var(--Blue-500, #04324E);
+      border-right: 3px solid var(--Blue-500, #04324E);
+      border-bottom: 4px solid var(--Blue-500, #04324E);
+      border-left: 3px solid var(--Blue-500, #04324E);
     }
     .info-card-row{
-        padding-left: 60px;
-        padding-right: 60px;
+      justify-content: space-between;
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
     }   
  
     #challenge-title{
         color: var(--Blue-500, #04324E);
-        /* Headers/H3 */
-        font-family: Montserrat;
         font-size: var(--font-size-5xl, 32px);
         font-style: normal;
         font-weight: 700;
         line-height: var(--font-size-7xl, 40px); /* 125% */
       }
-      #challenge-description{
+      #conclusion-title{
+        margin-bottom: 20px;
         color: var(--Blue-500, #04324E);
-        /* Headers/Subheader 2 */
+        font-size: var(--font-size-5xl, 32px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--font-size-7xl, 40px); /* 125% */
+      }
+      #card-row-title{
+        margin-bottom: 40px;
+          color: var(--Blue-500, #04324E);
+          font-size: var(--font-size-5xl, 32px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: var(--font-size-7xl, 40px); /* 125% */
+        }
+      #challenge-description{
+        margin-bottom: 33px;
+        color: var(--Blue-500, #04324E);
+        font-size: 30px;
         font-size: var(--font-size-2xl, 24px);
         font-style: normal;
         font-weight: 400;
         line-height: var(--font-line-height-lg, 32px); /* 133.333% */
       }
       #info-card-title{
-        color: var(--Blue-500, #04324E); /* 133.33% */
+        color: var(--Blue-500, #04324E);
+        font-size: var(--font-size-2xl, 24px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--font-line-height-lg, 32px);
+
       }
       #info-card-description{
         color: var(--Blue-500, #04324E);
+        font-size: var(--font-size-lg, 18px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-line-height-md, 28px);
       }
   

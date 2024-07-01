@@ -7,9 +7,11 @@ const VideoCardComponent = () => {
   return (
     <div classname="container" >
       <main>
-        <div class="row">
-          <div class='card col-6' className='clear-spend-logo-card'>
+        <div class="row" className='clear-spend-logo-card'>
+          <div class='card ' className='col-3'>
               <img src={logo} alt="logo" id='clear-spend-logo'/>
+          </div>
+          <div className='col-3'>
                 <Button className='contact-us-button'>Contact Us</Button>
           </div>
         </div>
@@ -33,7 +35,7 @@ const VideoCardComponent = () => {
                     <a href="https://youtu.be/GawqxG9hWPU" class="btn btn-primary">Contact Us</a>
                   </div>
                 </div>
-                <div class="col-12" id='watch-now-link'>
+                <div class="col-12" className='watch-now-link'>
                   <a href="https://www.youtube.com/watch?v=Fjo8-ihGJiY" className="watch-now-link">Watch Now</a>
                 </div>
               </div>

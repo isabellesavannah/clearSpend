@@ -9,49 +9,57 @@ const GifCardComponent = () => {
     return (
         <main>
             <row>
-                <h3 className='col-12 gif-card'>
-                    Transparency That Citizens Deserve
-                </h3>
-                <p className='col-12'>
-                    Our solution simplifies the complexities of transparency efforts, 
-                    ensuring your state meets legislative mandates and public 
-                    expectations for open governance.
-                </p>
+                <div class="card" className='col-12'>
+                    <div class="row">
+                        <h3 className='col-12 gif-card'>
+                            Transparency That Citizens Deserve
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <p className='col-12'>
+                            Our solution simplifies the complexities of transparency efforts, 
+                            ensuring your state meets legislative mandates and public 
+                            expectations for open governance.
+                        </p>
+                    </div>
+                </div>
             </row>
             <row>
-
-                <h5 className='col-12'>The key elements to effective transparency are...</h5>
-            </row>
-            <row className='hover-options'>
-                <div class="card" className='col-6'>
-                    <li 
-                    onMouseEnter={() => setCurrentGif(transparencyGif)} 
-                    onMouseLeave={() => setCurrentGif(null)}>
-                        Intuitive Data
-                    </li>
-
-                    <li
-                    onMouseEnter={() => setCurrentGif(siteDemo)} 
-                    onMouseLeave={() => setCurrentGif(null)}>
-                        Informative Data
-                    </li>
-
-                    <li
-                    onMouseEnter={() => setCurrentGif(stats)} 
-                    onMouseLeave={() => setCurrentGif(null)}>
-                        Interactive Data
-                    </li>
+                <div class="card" className='col-12'>
+                    <div class="row">
+                        <h3 className='col-12 gif-card'>
+                        The key elements to effective transparency are...
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div className='col-6'>
+                            <div class='row'>
+                                <div className='col-12'
+                                    onMouseEnter={() => setCurrentGif(transparencyGif)} 
+                                    onMouseLeave={() => setCurrentGif(null)}>
+                                        Intuitive Data
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div className='col-12'
+                                   onMouseEnter={() => setCurrentGif(siteDemo)} 
+                                    onMouseLeave={() => setCurrentGif(null)}>
+                                        Informative Data
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div className='col-12'
+                                    onMouseEnter={() => setCurrentGif(stats)} 
+                                    onMouseLeave={() => setCurrentGif(null)}>
+                                        Interactive Data
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card" className='col-6'>
-                    {currentGif && (
-                        <img 
-                            className="card-img-top col-6" 
-                            src={currentGif} 
-                            alt="" 
-                        />
-                    )}
-                </div>
             </row>
+
+
         </main>
     );
 };

@@ -1,0 +1,3 @@
+.main-container{
+    width: var(--HeaderWidth, 1440px);
+}

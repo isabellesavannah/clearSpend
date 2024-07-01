@@ -1,0 +1,16 @@
+.gif-card-component {
+    background-image: url("../../images/gifs/blueBackground2.png");
+    position: relative;
+    width: var(--HeaderWidth, 1440px);
+    height: 1469px;
+  } 
+.hover-options:hover{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.gif-card-component{
+
+}

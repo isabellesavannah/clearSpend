@@ -7,50 +7,52 @@ import stats from '../images/gifs/stats.gif';
 const GifCardComponent = () => {
     const [currentGif, setCurrentGif] = useState(null);
     return (
-        <div className="landing-page">
         <main>
-            <div class="row">
-                <div class="card col-6">
-                    <h5 class="card-title">Transparency That Citizens Deserve</h5>
-                    <p>
-                        Our solution simplifies the complexities of transparency efforts, 
-                        ensuring your state meets legislative mandates and public 
-                        expectations for open governance.
-                    </p>
-                    <h5 class="card-title">The key elements to effective transparency are...</h5>
-                    <div
+            <row>
+                <h3 className='col-12 gif-card'>
+                    Transparency That Citizens Deserve
+                </h3>
+                <p className='col-12'>
+                    Our solution simplifies the complexities of transparency efforts, 
+                    ensuring your state meets legislative mandates and public 
+                    expectations for open governance.
+                </p>
+            </row>
+            <row>
+
+                <h5 className='col-12'>The key elements to effective transparency are...</h5>
+            </row>
+            <row className='hover-options'>
+                <div class="card" className='col-6'>
+                    <li 
                     onMouseEnter={() => setCurrentGif(transparencyGif)} 
                     onMouseLeave={() => setCurrentGif(null)}>
-                        <p class="card-text">Intuitive Data</p>
-                    </div>
+                        Intuitive Data
+                    </li>
 
-                    <div
+                    <li
                     onMouseEnter={() => setCurrentGif(siteDemo)} 
                     onMouseLeave={() => setCurrentGif(null)}>
-                        <p class="card-text">Informative Data</p>
-                    </div>
+                        Informative Data
+                    </li>
 
-                    <div
+                    <li
                     onMouseEnter={() => setCurrentGif(stats)} 
                     onMouseLeave={() => setCurrentGif(null)}>
-                        <p class="card-text">Interactive Data</p>
-                    </div>
+                        Interactive Data
+                    </li>
                 </div>
-                <div class="card col-6">
+                <div class="card" className='col-6'>
                     {currentGif && (
                         <img 
-                            className="card-img-top" 
+                            className="card-img-top col-6" 
                             src={currentGif} 
                             alt="" 
                         />
                     )}
                 </div>
-                <div class="card col-12">
-                    <a href="https://youtu.be/GawqxG9hWPU" class="btn btn-primary">Contact Us</a>
-                </div>
-            </div>
+            </row>
         </main>
-        </div>
     );
 };
 

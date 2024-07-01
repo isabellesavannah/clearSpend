@@ -1,5 +1,12 @@
 .intro-component {
   background-image: url("../../images/introComponenetImages/blueBackground.png");
+  position: relative;
+} 
+.intro-card{
+  position: relative;
+  background-color: transparent;
+  height:120%;
+  bottom: -50px;
 }
 .video-card {
     width: 100%;
@@ -10,7 +17,6 @@
     border-radius: var(--font-line-height-md, 28px);
     display: block;
     pointer-events: none;
-    
   }
   .government-transparency-card{
     position: absolute;
@@ -24,9 +30,6 @@
     border-radius: 24px;
     border: 0.5px solid #00324E;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(111deg, rgba(0, 50, 78, 0.54) 34.58%, rgba(0, 83, 129, 0.43) 66.64%, rgba(0, 115, 180, 0.38) 98.7%);
-
-  }
-  .government-transparency-card-content{
     text-align: center;
     padding: 57px 62px;
     display: flex;
@@ -34,6 +37,7 @@
     justify-content: center;
     color:white;
   }
+
 .clear-spend-logo{
     width: 152px;
     height: 152px;
@@ -45,4 +49,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: var(--font-size-7xl, 40px); /* 125% */
+}
+#government-transparency-card-content{
+  margin-bottom: 190px;
+  margin-top: 150px;
+}
+#watch-now-link{
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
 }

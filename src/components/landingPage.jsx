@@ -7,8 +7,9 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <main>
-        <VideoCardComponent />
-        <GifCardComponent />
+        <div className='intro-component'>
+            <VideoCardComponent />
+        </div>
       </main>
     </div>    
     

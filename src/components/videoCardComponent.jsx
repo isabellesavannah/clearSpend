@@ -1,24 +1,20 @@
 import React from 'react';
 import '../css/introComponent/introCard.css';
 import { Button } from 'react-bootstrap';
-import logo from '../images/introComponenetImages/ClearSpendLogo.svg';
+import logo from '../images/introComponenetImages/clearSpendLogo.png';
 
 const VideoCardComponent = () => {
   return (
     <div classname="container" >
       <main>
         <div class="row">
-          <div class="col-12">
-          <nav class="navbar navbar-light bg-primary">
-            <img src={logo} alt="logo" />
-                </nav>
+          <div class='card col-6' className='clear-spend-logo-card'>
+              <img src={logo} alt="logo" id='clear-spend-logo'/>
+                <Button className='contact-us-button'>Contact Us</Button>
           </div>
         </div>
         <div class="row" >
           <div class="col-12 card" className='intro-card'>
-            <div class='card-title'>
-              <Button className='contact-us-button'>Contact Us</Button>
-            </div>
             <iframe
               className='video-card'
               title='hero video'
@@ -28,10 +24,10 @@ const VideoCardComponent = () => {
               <div class="row">
                 <div class="col-12" id='government-transparency-card-content'>
                   <h1 id='card-title'>
-                    Government Transparency That is Easy to Implement and Easy to Use
+                    Government Transparency That is <br/> Easy to Implement and Easy to Use
                   </h1>
-                  <p>
-                    Transform how you share state, county, city, education, and local government financials with our transparency solution.
+                  <p id='card-description'>
+                    Transform how you share state, county, city, education, and <br/> local government financials with our transparency solution.
                   </p>
                   <div class="col-12">
                     <a href="https://youtu.be/GawqxG9hWPU" class="btn btn-primary">Contact Us</a>

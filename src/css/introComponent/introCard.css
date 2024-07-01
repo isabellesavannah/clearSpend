@@ -5,7 +5,8 @@
 .intro-card{
   position: relative;
   background-color: transparent;
-  height:120%;
+  width: 1300px;
+  height: 600px;
   bottom: -50px;
 }
 .video-card {
@@ -26,7 +27,7 @@
     width: 800px;
     max-width: 800px;
     height: 400px;
-    display: block;
+    display: flex;
     border-radius: 24px;
     border: 0.5px solid #00324E;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(111deg, rgba(0, 50, 78, 0.54) 34.58%, rgba(0, 83, 129, 0.43) 66.64%, rgba(0, 115, 180, 0.38) 98.7%);
@@ -36,22 +37,47 @@
     align-items: center;
     justify-content: center;
     color:white;
+    gap: 10px;
   }
 
-.clear-spend-logo{
-    width: 152px;
+.clear-spend-logo-card{
     height: 152px;
+    width: 152px;
     flex-shrink: 0;
+    background-color: white;
+    background-color: transparent;
+    position: absolute;
+  }
+  .contact-us-button{
+    float: right;
+  }
+  #clear-spend-logo{
+    width: 170px;
+    height: 100px;
+    margin-left:55px;
+    z-index: 100;
+    position: absolute;
+    border-radius: 0px 0px var(--itt-spacing-sm, 8px) var(--itt-spacing-sm, 8px);
   }
 #card-title{
-  align-self: stretch;
+  color: var(--Blue-semiTransparent, #FFFFF9);
+  text-align: center;
+  /* Headers/H3 */
   font-size: var(--font-size-5xl, 32px);
   font-style: normal;
   font-weight: 700;
   line-height: var(--font-size-7xl, 40px); /* 125% */
 }
+#card-description{
+  color: var(--Blue-semiTransparent, #FFFFF9);
+  text-align: center;
+  font-size: var(--font-size-2xl, 24px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--font-line-height-lg, 32px); /* 133.333% */
+}
 #government-transparency-card-content{
-  margin-bottom: 190px;
+  margin-bottom: 140px;
   margin-top: 150px;
 }
 #watch-now-link{
@@ -60,4 +86,21 @@
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
+}
+#challenge-title{
+  color: var(--Blue-500, #04324E);
+  /* Headers/H3 */
+  font-family: Montserrat;
+  font-size: var(--font-size-5xl, 32px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-size-7xl, 40px); /* 125% */
+}
+#challenge-description{
+  color: var(--Blue-500, #04324E);
+  /* Headers/Subheader 2 */
+  font-size: var(--font-size-2xl, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-line-height-lg, 32px); /* 133.333% */
 }

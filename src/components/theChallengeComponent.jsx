@@ -2,8 +2,7 @@ import React from 'react';
 import '../css/introComponent/challengeCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import brain from '../images/introComponenetImages/brain.svg';
-import { Button, Row } from 'react-bootstrap';
-
+import { Button } from 'react-bootstrap';
 import boom from '../images/introComponenetImages/boom.svg';
 import wave from '../images/introComponenetImages/wave.svg';
 

@@ -22,7 +22,7 @@ const LandingPage = () => {
         <div className='challenge-card-component universal-componenet'>
             <TheChallengeComponent />
         </div>
-        <div className='gif-card-component universal-componenet'>
+        <div className='gif-component universal-componenet'>
             <GifCardComponent />
         </div>
       </main>

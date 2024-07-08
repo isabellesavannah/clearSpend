@@ -6,6 +6,7 @@ import '../css/introComponent/gifCard.css';
 import VideoCardComponent from './videoCardComponent';
 import TheChallengeComponent from './theChallengeComponent';
 import GifCardComponent from './gifCardComponent';
+import ResultsComponent from './resultsComponent';
 
 const LandingPage = () => {
   return (
@@ -24,6 +25,9 @@ const LandingPage = () => {
         </div>
         <div className='gif-component universal-componenet'>
             <GifCardComponent />
+        </div>
+        <div className='universal-componenet results-component'>
+            <ResultsComponent />
         </div>
       </main>
     </div>    

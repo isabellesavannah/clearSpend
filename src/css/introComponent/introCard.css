@@ -1,12 +1,31 @@
-.intro-component {
+
+.header{
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; 
+  z-index: 100;
+}
+.gif-component-contents{
+  padding-top: 50px;
+}
+.state-challenge{
+  width: 1350px;
+  position: relative; 
+  max-width: 100%;
+  width: 100%;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+.blue-background{
   background-image: url("../../images/introComponenetImages/blueBackground.png");
-    background-size: cover;
-    background-position: center;
-} 
+  background-position: center;
+  height: 520px;
+  margin-bottom: 120px;
+}
 .intro-card{
   background-color: transparent;
   height: 500px;
-  max-width: 75rem;
   width: 1350px;
   bottom: -50px;
   padding-left: 50%;
@@ -18,7 +37,6 @@
 
 .video-card {
     width: 1350px;
-    max-width: 70rem;
     height: 110%;
     flex-shrink: 0;
     margin: 0 auto;
@@ -47,10 +65,10 @@
     background-color: transparent;
     position: absolute;
     display: flex;
-    justify-content: center;
     align-self: start;
   }
   .contact-us-button{
+    float: right;
   }
   .watch-now-link{
     font-size: 1.5rem;

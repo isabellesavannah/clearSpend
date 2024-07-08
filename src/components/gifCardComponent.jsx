@@ -3,15 +3,14 @@ import '../css/introComponent/gifCard.css';
 import transparencyGif from '../images/gifs/transparentIdaho.gif';
 import siteDemo from '../images/gifs/siteDemo.gif';
 import stats from '../images/gifs/stats.gif';
-import intuitive from '../images/gifs/intuitiveData.png';
-import informative from '../images/gifs/informativeData.png';
-import interactivedata from '../images/gifs/interactivedata.png';
+import { Button } from 'react-bootstrap';
 import woolf from '../images/gifs/woolf.png';
 
 const GifCardComponent = () => {
     const [currentGif, setCurrentGif] = useState(transparencyGif);
     return (
-        <main>
+        <div className='container-fluid '>
+            <main className='gif-component-contents'>
             <div class="row">
                 <div className='col'>
                     <h3 id='gif-component-title'>
@@ -38,11 +37,14 @@ const GifCardComponent = () => {
                                 onMouseEnter={() => setCurrentGif(transparencyGif)}
                                 onMouseLeave={() => setCurrentGif(transparencyGif)}
                                 >
-                                    <img 
-                                    className="img-fluid" 
-                                    src={intuitive} 
-                                    alt="Current GIF" 
-                                    />
+                                    <h1 className='elements-title'>Intuitive Data</h1>
+                                    <p className='elements-desc'>
+                                        Whether you’re searching for high-level state reports or a specific <br/>
+                                        county salary, information is easy-to-find for everyone.
+                                    </p>
+                                    <div className='white-line'>
+
+                                    </div>    
                                 </div>
                                 
                         </div>
@@ -51,11 +53,14 @@ const GifCardComponent = () => {
                             onMouseEnter={() => setCurrentGif(siteDemo)}
                             onMouseLeave={() => setCurrentGif(transparencyGif)}
                             >
-                                <img 
-                                className="img-fluid" 
-                                src={informative} 
-                                alt="Current GIF" 
-                                />
+                                <h1 className='elements-title'>Informative Data</h1>
+                                    <p className='elements-desc'>
+                                    Tooltips and descriptions clear up confusion and guide users to <br/>
+                                     understand data with much needed context.
+                                    </p>
+                                    <div className='white-line'>
+
+                                    </div>
                             </div>
                             
                         </div>
@@ -64,35 +69,47 @@ const GifCardComponent = () => {
                             onMouseEnter={() => setCurrentGif(stats)}
                             onMouseLeave={() => setCurrentGif(transparencyGif)}
                             >
-                                <img 
-                                className="img-fluid" 
-                                src={interactivedata} 
-                                alt="Current GIF" 
-                                />
+                                <h1 className='elements-title'>Interactive Data</h1>
+                                    <p className='elements-desc'>
+                                    You can explore dynamic interactions with data to gain insights beyond <br/>
+                                    the numbers.
+                                    </p>
+                                    <div className='white-line'>
+
+                                    </div>
                             </div>
                             
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-6 gif-column">
                         {currentGif && (
                             <img 
-                                className="img-fluid" 
+                                className="img-fluid gif-style" 
                                 src={currentGif} 
                                 alt="Current GIF" 
                             />
                         )}
                     </div>
                 </div>
+            <div class='row' className='conclusion'>
+                <p id='gif-component-title'>Transforming Government Transparency</p>
+                <p id='conclusion-desc'>Discover how our platform revolutionized transparency for Idaho.</p>
+                <div className='col-12'>
+                    <Button >Contact Us</Button>
+                </div>
+            </div>
             <row>
                 <div className='col-12'>
                 <img 
-                    className="img-fluid" 
+                    className="img-fluid woolf-img" 
                     src={woolf} 
-                    alt="Current GIF" 
+                    alt="" 
                 />
                 </div>
             </row>
         </main>
+        </div>
+        
     );
 };
 

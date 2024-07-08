@@ -9,21 +9,20 @@ import wave from '../images/introComponenetImages/wave.svg';
 
 const VideoCardComponent = () => {
   return (
-    <div classname="container" >
-      <main>
-            <div className='challenge-component'>
-                <div class="row">
-                    <div class="card" className='col-12'>
-                        <h1 id='challenge-title'>
+        <main>
+            <div class="row" className='challenge-component'>
+                <div className='col-12'>
+                    <h1 id='challenge-title'>
                         The Challenge of State Transparency
-                        </h1>
-                        <p id='challenge-description'>
-                        Citizens deserve transparency, but creating and implementing<br/> clear and engaging fiscal information is complex.
-                        </p>
-                    </div>
+                    </h1>
                 </div>
-                <div class="row">
-                    <h1 className='col-12' id='card-row-title'>
+                <div className='col-12'>
+                    <p id='challenge-description'>
+                        Citizens deserve transparency, but creating and implementing<br/> clear and engaging fiscal information is complex.
+                    </p>
+                </div>
+                <div className='col-12'>
+                    <h1 id='card-row-title'>
                         Many state transparency sites fall short because they are...
                     </h1> 
                 </div>
@@ -76,17 +75,12 @@ const VideoCardComponent = () => {
                 </div>
             </div>
             <div class='row' classname="info-card-row">
-                <div class="card" className='col-9'>
-                    <div class="row">
                         <h3 className="col-12" id='conclusion-title'>We can clear the path to effective transparency.</h3>
                         <div className="col-12">
-                         <Button >Contact Us</Button>         
+                        <Button >Contact Us</Button>         
                         </div>
-                    </div>
-                </div> 
             </div>
       </main>
-    </div>
   );
 };
 

@@ -11,24 +11,21 @@ import woolf from '../images/gifs/woolf.png';
 const GifCardComponent = () => {
     const [currentGif, setCurrentGif] = useState(transparencyGif);
     return (
-        <main className='gif-card-container'>
-            <row>
-                <div class="card" className='col-12'>
-                    <div class="row">
-                        <h3 className='col-12' id='gif-component-title'>
-                            Transparency That Citizens Deserve
-                        </h3>
-                    </div>
-                    <div class="row">
-                        <p className='col-12' id='gif-component-description'>
-                            Our solution simplifies the complexities of transparency efforts,<br/>
-                            ensuring your state meets legislative mandates and public <br/>
-                            expectations for open governance.
-                        </p>
-                    </div>
+        <main>
+            <div class="row">
+                <div className='col'>
+                    <h3 id='gif-component-title'>
+                        Transparency That Citizens Deserve
+                    </h3>
                 </div>
-            </row>
-            <div>
+            </div>
+                <div class="row">
+                    <p className='col' id='gif-component-description'>
+                        Our solution simplifies the complexities of transparency efforts,<br/>
+                        ensuring your state meets legislative mandates and public <br/>
+                        expectations for open governance.
+                    </p>
+                </div>
                 <div className="row">
                     <div className="col-9">
                         <h3 id='gif-card-title'>The key elements to effective transparency are...</h3>
@@ -86,7 +83,6 @@ const GifCardComponent = () => {
                         )}
                     </div>
                 </div>
-            </div>
             <row>
                 <div className='col-12'>
                 <img 

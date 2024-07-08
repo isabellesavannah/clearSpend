@@ -5,18 +5,18 @@ import logo from '../images/introComponenetImages/clearSpendLogo.png';
 
 const VideoCardComponent = () => {
   return (
-    <div classname="container" >
+    <div classname="container-fluid" >
       <main>
-        <div class="row" className='clear-spend-logo-card'>
-          <div class='card ' className='col-3'>
-              <img src={logo} alt="logo" id='clear-spend-logo'/>
-          </div>
-          <div className='col-3'>
-                <Button className='contact-us-button'>Contact Us</Button>
-          </div>
-        </div>
         <div class="row" >
           <div class="col-12 card" className='intro-card'>
+            <div class="row" className='clear-spend-logo-card'>
+              <div className='col-12'>
+                  <img src={logo} alt="logo" id='clear-spend-logo'/>
+              </div>
+              <div className='col-12'>
+                    <Button className='contact-us-button'>Contact Us</Button>
+              </div>
+            </div>
             <iframe
               className='video-card'
               title='hero video'
@@ -31,8 +31,8 @@ const VideoCardComponent = () => {
                   <p id='card-description'>
                     Transform how you share state, county, city, education, and <br/> local government financials with our transparency solution.
                   </p>
-                  <div class="col-12">
-                    <a href="https://youtu.be/GawqxG9hWPU" class="btn btn-primary">Contact Us</a>
+                  <div class="col-12" id='contact-us-card-button'>
+                    <a href="https://youtu.be/GawqxG9hWPU"  class="btn btn-primary">Contact Us</a>
                   </div>
                 </div>
                 <div class="col-12" className='watch-now-link'>

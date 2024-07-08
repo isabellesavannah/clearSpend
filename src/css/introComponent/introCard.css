@@ -1,22 +1,25 @@
 .intro-component {
   background-image: url("../../images/introComponenetImages/blueBackground.png");
-  position: relative;
-  flex-shrink: 0;
-  justify-content: center;
-  width: 100%;
+    background-size: cover;
+    background-position: center;
 } 
 .intro-card{
-  position: relative;
   background-color: transparent;
-  height: 600px;
-  width: 1300px;
+  height: 500px;
+  max-width: 75rem;
+  width: 1350px;
   bottom: -50px;
   padding-left: 50%;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; 
 }
+
 .video-card {
-    width: 120%;
-    max-width: 1300px;
-    height: 100%;
+    width: 1350px;
+    max-width: 70rem;
+    height: 110%;
     flex-shrink: 0;
     margin: 0 auto;
     border-radius: var(--font-line-height-md, 28px);
@@ -25,13 +28,9 @@
   }
   .government-transparency-card{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 650px;
+    width: 75%;
     max-width: 800px;
     height: 400px;
-    display: flex;
     border-radius: 24px;
     border: 0.5px solid #00324E;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(111deg, rgba(0, 50, 78, 0.54) 34.58%, rgba(0, 83, 129, 0.43) 66.64%, rgba(0, 115, 180, 0.38) 98.7%);
@@ -46,15 +45,14 @@
 
 .clear-spend-logo-card{
     background-color: transparent;
-    margin-left:255px;
-    justify-content: flex-end;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: start;
   }
   .contact-us-button{
-    margin-left: auto;
-    position: relative;
   }
   .watch-now-link{
-    position: relative;
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
@@ -63,14 +61,15 @@
   }
   .watch-now-link:hover {
     color: white; /* Change this to your desired hover color */
-    text-decoration: underline; /* Optional: Add underline on hover */
+    text-decoration: underline;
+     /* Optional: Add underline on hover */
+}
+#contact-us-card-button{
+  margin-top: 55px;
 }
   #clear-spend-logo{
     width: 170px;
     height: 100px;
-    z-index: 100;
-    position: absolute;
-    margin-top: 20px;
     border-radius: var(--font-line-height-md, 10px);
   }
 #card-title{

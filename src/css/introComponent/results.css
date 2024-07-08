@@ -1,4 +1,5 @@
 .results-card{
+    position: relative;
     height: 448px;
     display: flex;
     flex-direction: row;

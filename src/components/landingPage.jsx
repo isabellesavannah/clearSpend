@@ -17,18 +17,10 @@ const LandingPage = () => {
         <nav className='nav-component'>
           
         </nav>
-        <div className='intro-component'>
+        <div className='intro-component align-items-center'>
             <VideoCardComponent />
         </div>
-        <div className='challenge-card-component universal-componenet'>
-            <TheChallengeComponent />
-        </div>
-        <div className='gif-component universal-componenet'>
-            <GifCardComponent />
-        </div>
-        <div className='universal-componenet results-component'>
-            <ResultsComponent />
-        </div>
+        
       </main>
     </div>    
   );
